@@ -150,7 +150,7 @@ Also affects 'linum-mode' background."
   :type 'string
   :group 'monokai)
 
-(defcustom monokai-background "#272822"
+(defcustom monokai-background "#000000"
   "Adaptive colors - background"
   :type 'string
   :group 'monokai)
@@ -291,7 +291,7 @@ Also affects 'linum-mode' background."
        (monokai-256-gray-l         "#707070")
        ;; Adaptive colors
        (monokai-256-foreground     "#F5F5F5")
-       (monokai-256-background     "#1B1E1C")
+       (monokai-256-background     "#000000")
        (monokai-256-comments       "#8B8878")
        (monokai-256-emphasis       "#FFFAFA")
        (monokai-256-line-number    "#8F908A")
@@ -570,7 +570,7 @@ Also affects 'linum-mode' background."
       (,monokai-256-class (:inverse-video unspecified
                                            :underline unspecified
                                            :foreground ,monokai-256-foreground
-                                           :background ,monokai-256-background
+                                           :background ,monokai-256-gray
                                            :box (:line-width 1
                                                              :color ,monokai-256-highlight
                                                              :style nil)))))
